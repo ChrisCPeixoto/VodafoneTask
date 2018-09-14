@@ -1,0 +1,34 @@
+{
+  "contacts": [
+    {
+    "name": "Kiss Bence",
+    "email": "kissbence@gmail.com",
+    "phone": "+3620789732"
+    },
+    {
+    "name": "Kovacs Ibolya",
+    "email": "kovacsibolya@gmail.com",
+    "phone": "+3620837732"
+    },
+    {
+    "name": "Nagy David",
+    "email": "nagydavid@gmail.com",
+    "phone": "+3620907752"
+    },
+    {
+    "name": "Peixoto Christophe",
+    "email": "christophepeixoto@gmail.com",
+    "phone": "+3620935652"
+    },
+    {
+    "name": "Antal Csaba",
+    "email": "antalcsaba@gmail.com",
+    "phone": "+3670915652"
+    },
+    {
+    "name": "Czimadia Patricia",
+    "email": "cszipat@hotmail.com",
+    "phone": "+3670931952"
+    }
+  ]
+}

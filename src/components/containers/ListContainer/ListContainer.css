@@ -1,0 +1,11 @@
+.contactHeader {
+  display: inline-block;
+  margin: 40px 0px;
+  font-size: 28px; }
+
+.contactUnderline {
+  border-bottom: 2px solid red;
+  padding-bottom: 3px; }
+
+.listletterscontainer {
+  margin-bottom: 20px; }
