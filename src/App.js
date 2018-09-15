@@ -9,9 +9,15 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Layout>
-          <ListContainer/>
-        </Layout>
+        <div className="container">
+          <div className="row justify-content-md-center">
+            <div className="col-md-10 col-sm-12">
+              <Layout>
+                <ListContainer/>
+              </Layout>
+            </div>
+          </div>
+        </div>
       </div>
     );
   }

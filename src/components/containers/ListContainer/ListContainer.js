@@ -21,6 +21,18 @@ fillLetters=()=>{
   this.setState({listOfLetter:newarray});
 }
 
+searchGlobal=(event)=>{
+  let newarray = []
+  for (var i=0; i < this.state.contactsarray.length; i++) {
+        if (this.state.contactsarray[i].name.includes(event.target.value)||this.state.contactsarray[i].email.includes(event.target.value)||this.state.contactsarray[i].phone.includes(event.target.value)) {
+            newarray.push(this.state.contactsarray[i]);
+        }
+    }
+  const temp=[...newarray]
+  this.setState({contactsToDisplay:temp});
+}
+
+
 searchByLetter=(letter)=>{
   let filteredNames = this.state.contactsarray.filter(function(object) {
        return object.name.charAt(0) === letter;
@@ -36,6 +48,7 @@ searchByLetter=(letter)=>{
   render() {
     return (
       <Aux>
+        <input className="header-search" type="text" placeholder="Search for contact" onChange={this.searchGlobal}></input>
         <div className="container">
           <div className="row justify-content-md-center">
             <div className="col-md-auto col-sm-12">
@@ -56,6 +69,7 @@ searchByLetter=(letter)=>{
             })}
           </div>
         </div>
+        <button type="button" className="btn btn-danger roundbutton">+</button>
       </Aux>
     );
   }
