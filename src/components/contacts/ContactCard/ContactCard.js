@@ -1,11 +1,13 @@
 import React  from 'react';
 import Aux from '../../../hoc/Aux';
 import './ContactCard.css';
+import {Link} from 'react-router-dom';
 
 const ContactCard = (props) => {
     return (
       <Aux>
-            <div className="col-md-4 col-sm-12">
+          <div className="col-md-4 col-sm-12">
+              <Link to={'/details/'+props.name}>  <span className="card-click"></span></Link>
               <div className="card">
                     <div className="card-header">
                       {props.name}

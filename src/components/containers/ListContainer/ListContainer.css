@@ -3,10 +3,6 @@
   margin: 40px 0px;
   font-size: 28px; }
 
-.contactUnderline {
-  border-bottom: 2px solid red;
-  padding-bottom: 3px; }
-
 .listletterscontainer {
   margin-bottom: 20px; }
 
@@ -20,4 +16,5 @@
   border-radius: 25px;
   position: fixed;
   bottom: 10px;
-  right: 20px; }
+  right: 20px;
+  z-index: 11; }

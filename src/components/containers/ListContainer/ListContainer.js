@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
 
 import Aux from '../../../hoc/Aux'
 import ContactCard from '../../contacts/ContactCard/ContactCard'
@@ -41,7 +42,7 @@ searchByLetter=(letter)=>{
   this.setState({contactsToDisplay:newarray});
 }
 
-
+/* Choose Didmount because in a real life case we would get the information froma Web Service*/
   componentDidMount(){
     this.fillLetters();
   }
@@ -69,7 +70,7 @@ searchByLetter=(letter)=>{
             })}
           </div>
         </div>
-        <button type="button" className="btn btn-danger roundbutton">+</button>
+        <Link to="/add"><button type="button" className="btn btn-danger roundbutton">+</button></Link>
       </Aux>
     );
   }
